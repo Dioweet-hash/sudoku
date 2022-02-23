@@ -25,6 +25,7 @@ def rand_filler():
         #time.sleep(0.1)
     #print(mainList)
 
+#FILL
 def generator_of_normal_things():
     normList = []
 
@@ -37,17 +38,23 @@ def generator_of_normal_things():
             else:
                 normList.append(x)
                 step = False
-    mainList.append(normList)
-    print(mainList)
+        mainList.append(x)
+    #print(mainList)
 
-
+# 12 23 34 45 56 67 78 89 91
+#generator with check horizontal and vertical
+def checker():
+    for i in range(0,9):
+        
 
 
 
 def main():
     #rand_filler()
-    #outputer()
-    generator_of_normal_things()
 
+
+    generator_of_normal_things()
+    outputer()
+    print(mainList)
 if __name__ == '__main__':
     main()
